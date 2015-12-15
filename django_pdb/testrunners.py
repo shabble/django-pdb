@@ -1,8 +1,10 @@
 import pdb
 
 from django.test.utils import get_runner
-
-from django.utils import unittest
+if django.VERSION >= (1, 8):
+    import unittest
+else:
+    from django.utils import unittest
 from django_pdb.utils import has_ipdb
 
 
