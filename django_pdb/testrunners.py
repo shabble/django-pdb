@@ -1,5 +1,5 @@
 import pdb
-
+import django
 from django.test.utils import get_runner
 if django.VERSION >= (1, 8):
     import unittest
